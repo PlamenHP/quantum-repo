@@ -34,7 +34,8 @@ namespace Windows11
                 else if (type == "addMany")
                 {
                     int index = int.Parse(param[1]);
-                    param.RemoveRange(0, 2);
+					param.Remove(0);
+					param.Remove(0);
                     var range = param.Select(int.Parse);
                     nums.InsertRange(index, range);
                 }
