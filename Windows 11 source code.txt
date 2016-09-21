@@ -21,15 +21,7 @@ namespace Windows11
                 {
                     int index = int.Parse(param[1]);
                     int element = int.Parse(param[2]);
-
-                    if (index == nums.Count)
-                    {
-                        nums.Add(element);
-                    }
-                    else
-                    {
-                        nums.Insert(index, element);
-                    }
+                    nums.Insert(index, element);
                 }
                 else if (type == "addMany")
                 {
